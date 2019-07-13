@@ -19,15 +19,9 @@ ul{
     list-style: none;
 }
 
-.container{
-    width: 82%;
-    margin: 0 auto;
-}
 
-.container-fluid{
-    width: 100%;
-    padding: 0 15px;
-}
+
+
 
 // brand-bootstrap:::
 
@@ -50,12 +44,14 @@ ul{
                     display: inline;
                     a:not(.freedownload){
                         @include icon-nav;
+                        transition: 0.3s all;
                         &:hover{
                             border-color:#00a6eb;
                             color:#00a6eb;
                         }
                     }
                     .freedownload{
+                        transition: 0.3s all;
                         @include icon-nav;
                         background-color:#00a6eb;
                         color:white;
@@ -66,6 +62,7 @@ ul{
                         }
                         &:hover{
                             background-color:lighten(#00a6eb, 10%); 
+                            border-color:#00a6eb;
                         }
                     }
                 }
@@ -88,6 +85,10 @@ ul{
             }
             a{
                 font-family: 'Open Sans', sans-serif;
+                transition: 0.3s all;
+                &:hover{
+                    color:$color-green;
+                }
             }
             span{
                 font-family: 'Open Sans', sans-serif;
@@ -95,12 +96,12 @@ ul{
             }
             .mail{
                 display: inline;
-                padding: 3px 15px 3px; 
+                padding: 3px 15px 3px 2px; 
                 border-right: 1px solid $color-lightengrey;
             }
             .tel{
                 display: inline;
-                padding-left: 10px;
+                padding-left: 20px;
             }
         }
         .contact-item-sosial{
@@ -111,10 +112,98 @@ ul{
             a{  
                 padding: 3px 11px;
                 border-left: 1px solid $color-lightengrey;
+                transition: 0.3s all;
                 &:hover{
                     color:$color-green;
                 }
             }
+        }
+    }
+}
+
+// Reveal-nav:::
+
+.reveal-nav{
+    padding: 15px 0;
+    box-shadow: 0 5px 8px rgb(233, 230, 230); 
+    
+    .reveal-nav-item{
+        position: relative;
+        @include flex-nav;
+        .reveal{
+            a{
+                h2{ 
+                    font-size: 42px;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 700;
+                    color:$color-blue;
+                    span{
+                        color:$color-green;
+                    }
+                }
+            }
+        }
+        .reveal-nav-dropdown{
+            max-width: 70%;
+            ul{
+                li{ 
+                    display: inline;
+                    margin: 0 5px;
+                    .active{
+                        color:$color-green;
+                    }
+                    a{ 
+                        color:darken($color-grey, 20%);
+                        padding: 10px 8px;
+                        font-family: "Raleway", sans-serif;
+                        font-size: 14px;
+                        font-weight: 700;
+                        transition: .3s all;
+                        &:hover{
+                            color:$color-green;
+                        }
+                    }
+                    .dropdown{
+                        display: inline-block;
+                        position: relative;
+                        transition: 1s all;
+                        .dropdown-content{
+                            display: none;
+                            position: absolute;
+                            z-index: 1;
+                            top:27px;
+                            left: 0;  
+                            box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+                            padding:  10px 20px;
+                            background-color: white;
+                            width: 200px;               
+                            animation-name: anim;
+                            animation-duration: 2s; 
+                            a{  
+                                display: block;
+                                padding: 12px 0;
+                                font-size: 12px;
+                                transition: .3s all;
+                                &:hover{
+                                    color:$color-green;
+                                }
+                            }
+                        }
+                        &:hover .dropdown-content{
+                            display: block;
+                            
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .toggle{
+            position: absolute;
+            right: 10px;
+            i{
+                font-size: 30px;
+            }    
         }
     }
 }

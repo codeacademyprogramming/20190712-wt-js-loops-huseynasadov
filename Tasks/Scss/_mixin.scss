@@ -11,3 +11,9 @@
     border-radius: 5px;
     display:inline-block;
 }
+@keyframes anim{
+    0%{opacity: 0;}
+    20%{opacity: 0;}
+    40%{opacity: 1;}
+    100%{opacity: 1;}
+}
