@@ -1,0 +1,13 @@
+@mixin flex-nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}  
+@mixin icon-nav($fsizeicon:20px){
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $fsizeicon;
+    padding: 8px 15px;
+    border:1px solid lighten($color-grey, 40%);
+    border-radius: 5px;
+    display:inline-block;
+}

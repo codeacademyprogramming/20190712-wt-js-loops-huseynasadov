@@ -1,1 +1,156 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  color: #828282;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 82%;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.brand-bootstrap {
+  padding: 10px 0 13px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.brand-bootstrap .brand-bootstrap-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brand-bootstrap .brand-bootstrap-items .brand {
+  border-right: 1px solid #e8e8e8;
+  padding: 5px 10px 1px;
+}
+
+.brand-bootstrap .brand-bootstrap-items .brand img {
+  width: 180px;
+}
+
+.brand-bootstrap .brand-bootstrap-items .download-nav {
+  padding: 0 10px;
+}
+
+.brand-bootstrap .brand-bootstrap-items .download-nav ul li {
+  display: inline;
+}
+
+.brand-bootstrap .brand-bootstrap-items .download-nav ul li a:not(.freedownload) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 8px 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.brand-bootstrap .brand-bootstrap-items .download-nav ul li a:not(.freedownload):hover {
+  border-color: #00a6eb;
+  color: #00a6eb;
+}
+
+.brand-bootstrap .brand-bootstrap-items .download-nav ul li .freedownload {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 8px 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #00a6eb;
+  color: white;
+  padding-left: 20px;
+}
+
+.brand-bootstrap .brand-bootstrap-items .download-nav ul li .freedownload span {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.brand-bootstrap .brand-bootstrap-items .download-nav ul li .freedownload:hover {
+  background-color: #1fbdff;
+}
+
+.contact {
+  padding: 12px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.contact .contact-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+.contact .contact-item .contact-item-mailtel i {
+  color: #50d8af;
+}
+
+.contact .contact-item .contact-item-mailtel a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact .contact-item .contact-item-mailtel span {
+  font-family: 'Open Sans', sans-serif;
+  color: #6e6d6d;
+}
+
+.contact .contact-item .contact-item-mailtel .mail {
+  display: inline;
+  padding: 3px 15px 3px;
+  border-right: 1px solid #e8e8e8;
+}
+
+.contact .contact-item .contact-item-mailtel .tel {
+  display: inline;
+  padding-left: 10px;
+}
+
+.contact .contact-item .contact-item-sosial {
+  margin-right: 8px;
+}
+
+.contact .contact-item .contact-item-sosial a:first-child {
+  border: 0;
+}
+
+.contact .contact-item .contact-item-sosial a {
+  padding: 3px 11px;
+  border-left: 1px solid #e8e8e8;
+}
+
+.contact .contact-item .contact-item-sosial a:hover {
+  color: #50d8af;
+}
+/*# sourceMappingURL=main.css.map */

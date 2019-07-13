@@ -1,0 +1,120 @@
+@import '../Scss/variables';
+@import '../Scss/mixin';
+
+// Global:::
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    box-sizing: border-box;
+    text-decoration: none;
+    color:$color-grey;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 82%;
+    margin: 0 auto;
+}
+
+.container-fluid{
+    width: 100%;
+    padding: 0 15px;
+}
+
+// brand-bootstrap:::
+
+.brand-bootstrap{
+    padding: 10px 0 13px;
+    border-bottom: 1px solid $color-lightengrey;
+    .brand-bootstrap-items{
+        @include flex-nav;    
+        .brand{
+            border-right: 1px solid $color-lightengrey;
+            padding: 5px 10px 1px;
+            img{
+                width: 180px;
+            }
+        }
+        .download-nav{
+            padding: 0 10px;
+            ul{
+                li{
+                    display: inline;
+                    a:not(.freedownload){
+                        @include icon-nav;
+                        &:hover{
+                            border-color:#00a6eb;
+                            color:#00a6eb;
+                        }
+                    }
+                    .freedownload{
+                        @include icon-nav;
+                        background-color:#00a6eb;
+                        color:white;
+                        padding-left: 20px;
+                        span{
+                            font-size: 14px;
+                            line-height: 1;
+                        }
+                        &:hover{
+                            background-color:lighten(#00a6eb, 10%); 
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}
+
+// contact:::
+
+.contact{
+    padding: 12px 0;
+    border-bottom: 1px solid $color-lightengrey;
+    .contact-item{
+        @include flex-nav;
+        font-size: 14px;
+        .contact-item-mailtel{
+            i{
+                color:$color-green;
+            }
+            a{
+                font-family: 'Open Sans', sans-serif;
+            }
+            span{
+                font-family: 'Open Sans', sans-serif;
+                color:rgb(110, 109, 109);
+            }
+            .mail{
+                display: inline;
+                padding: 3px 15px 3px; 
+                border-right: 1px solid $color-lightengrey;
+            }
+            .tel{
+                display: inline;
+                padding-left: 10px;
+            }
+        }
+        .contact-item-sosial{
+            margin-right: 8px;
+            a:first-child{
+                border:0;
+            }
+            a{  
+                padding: 3px 11px;
+                border-left: 1px solid $color-lightengrey;
+                &:hover{
+                    color:$color-green;
+                }
+            }
+        }
+    }
+}
