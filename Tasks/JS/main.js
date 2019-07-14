@@ -39,7 +39,7 @@ function creatSum(a,b){
             }
         }
     }
-    return "Error"
+    return console.log("Error");
 }
 
-//creatSum(1,20);
+//creatSum(20,1);

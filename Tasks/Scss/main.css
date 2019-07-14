@@ -70,6 +70,7 @@ ul {
 
 .brand-bootstrap .brand-bootstrap-items .brand img {
   width: 180px;
+  cursor: pointer;
 }
 
 .brand-bootstrap .brand-bootstrap-items .download-nav {

@@ -3,6 +3,13 @@
 
 // Global:::
 
+@keyframes anim{
+    0%{opacity: 0;}
+    20%{opacity: 0;}
+    40%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
 *{
     margin:0;
     padding: 0;
@@ -19,11 +26,7 @@ ul{
     list-style: none;
 }
 
-
-
-
-
-// brand-bootstrap:::
+// brand-bootstrap:::nav-1
 
 .brand-bootstrap{
     padding: 10px 0 13px;
@@ -35,6 +38,7 @@ ul{
             padding: 5px 10px 1px;
             img{
                 width: 180px;
+                cursor: pointer;
             }
         }
         .download-nav{
@@ -49,7 +53,7 @@ ul{
                             border-color:#00a6eb;
                             color:#00a6eb;
                         }
-                    }
+                    }               
                     .freedownload{
                         transition: 0.3s all;
                         @include icon-nav;
@@ -71,7 +75,7 @@ ul{
     }
 }
 
-// contact:::
+// contact:::nav-2
 
 .contact{
     padding: 12px 0;
@@ -121,12 +125,11 @@ ul{
     }
 }
 
-// Reveal-nav:::
+// Reveal:::nav-3
 
 .reveal-nav{
     padding: 15px 0;
-    box-shadow: 0 5px 8px rgb(233, 230, 230); 
-    
+    box-shadow: 0 5px 8px rgb(233, 230, 230);  
     .reveal-nav-item{
         position: relative;
         @include flex-nav;
@@ -190,9 +193,7 @@ ul{
                             }
                         }
                         &:hover .dropdown-content{
-                            display: block;
-                            
-                            
+                            display: block;        
                         }
                     }
                 }
